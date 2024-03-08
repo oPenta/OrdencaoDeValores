@@ -24,6 +24,21 @@ public class Main {
             bubbleSort.sort(cartas);
             System.out.print(cartas[i][0] + ", ");
         }
+        System.out.println("\nSua ordem em Selection Sort:");//SelectionSort
+        for (int i = 0; i < cartas.length; i++) {
+            SelectionSort.sort(cartas);
+            System.out.print(cartas[i][0] + ", ");
+        }
+        System.out.println("\nSua ordem em Insertion Sort:");//InsertionSort
+        for (int i = 0; i < cartas.length; i++) {
+            InsertionSort.sort(cartas);
+            System.out.print(cartas[i][0] + ", ");
+        }
+        System.out.println("\nSua ordem em Quick Sort:");//QuickSort
+        for (int i = 0; i < cartas.length; i++) {
+            QuickSort.sort(cartas, 0, cartas.length - 1);
+            System.out.print(cartas[i][0] + ", ");
+        }
 
     }
 }
